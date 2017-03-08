@@ -1,0 +1,2 @@
+2016-12-19 11:13:18.121 [http-bio-80-exec-8] DEBUG com.shiyang.test.SpringTest - 测试log：hello world!
+2016-12-19 11:13:18.128 [http-bio-80-exec-8] INFO  com.shiyang.test.SpringTest - 测试2log：hello world!

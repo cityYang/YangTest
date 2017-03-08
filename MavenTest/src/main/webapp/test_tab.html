@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试tab</title>
+<style type="text/css">
+body{
+  
+  padding:0;
+  margin:0;
+}
+#tanContainer{
+  border: 1px solid black;
+  height:auto;
+  width:auto;
+}
+li{
+  list-style:none;
+  float:left;
+  padding:0 5px;
+  border-right:1px solid black;
+}
+#tabCon{
+   border-top:1px solid blue;
+   height:70px;
+   width:100%;
+   clear:both;
+}
+</style>
+</head>
+<body>
+  <div id="tanContainer">
+    <div id="tab">
+    <ul>
+      <li onclick="tab('tab1')">标题一</li>
+      <li onclick="tab('tab2')">标题二</li>
+      <li onclick="tab('tab3')">标题三</li>
+      <li onclick="tab('tab4')">标题四</li>
+    </ul>
+    </div>
+    <div id="tabCon">
+      <div id="tab1">内容一</div>
+      <div id="tab2">内容二</div>
+      <div id="tab3">内容三</div>
+      <div id="tab4">内容四</div>
+    </div> 
+  </div>
+</body>
+  <script type="text/javascript">
+    function tab(pid){
+    	var tabs = ["tab1","tab2","tab3","tab4"];
+    	console.log(pid);
+    	for(var i=0;i<4;i++){
+    		if(tabs[i]==pid){
+    			document.getElementById(tabs[i]).style.display="block";
+    		}
+    		else{
+    			document.getElementById(tabs[i]).style.display="none";
+    		}
+    	}
+    }
+   window.onload = function(){
+      tab("tab1");
+   }
+  </script>
+</html>

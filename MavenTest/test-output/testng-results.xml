@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="365" started-at="2016-08-19T08:32:20Z" finished-at="2016-08-19T08:32:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="365" started-at="2016-08-19T08:32:20Z" finished-at="2016-08-19T08:32:20Z">
+      <class name="test.Test_testXml">
+        <test-method status="PASS" signature="testfinalVersion()[pri:0, instance:test.Test_testXml@4f4a7090]" name="testfinalVersion" duration-ms="342" started-at="2016-08-19T16:32:20Z" finished-at="2016-08-19T16:32:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfinalVersion -->
+      </class> <!-- test.Test_testXml -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

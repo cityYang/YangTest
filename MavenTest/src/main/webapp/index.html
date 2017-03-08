@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- <meta http-equiv="Access-Control-Allow-Origin" content="*"> -->
+<title>打电话</title>
+</head>
+<body>
+<input type="button" value="打电话" onclick="call()"/>
+<input type="button" value="建立连接" onclick="inphone()"/>
+</body>
+<script type="text/javascript"
+	src="jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+  function call(){
+	  var Gurl = "http://121.41.74.120/app?Action=Dialout&Account=N00000009694&PBX=sh.ali.5.1&FromExten=8000&Exten=13564890705&ActionID=123123";
+	  var Iurl="http://121.41.74.120/appAction=SignIn&ActionID=123123&Account=N00000009694&Exten=8000&PBX=sh.ali.5.1";
+      $.ajax({
+		  url:Iurl,
+		  type:'get',
+		  datatype:'JSONP',
+		  asyn:false,
+		  success:function(data){
+			  window.location.href=Gurl;
+			  console.log(data);
+		  },
+	      error:function(XMLHttpRequest, textStatus, errorThrown){
+	    	  console.log(XMLHttpRequest.status);
+	    	  console.log(XMLHttpRequest.readyState);
+	    	  console.log(textStatus);
+	      }
+	  }) 
+  }
+/*   function inphone(){
+	  $.ajax({
+		  url:cscBasePath + "/cloudPhone/inPhone.json",,
+		  type:"POST"
+		  asyn:false,
+		  success:function(data){
+			  console.log("成功");
+		  }
+	  })
+  } */
+</script>
+</html>
